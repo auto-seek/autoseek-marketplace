@@ -1,0 +1,32 @@
+{
+  "name": "autoseek-community",
+  "interface": {
+    "displayName": "AutoSeek 原创市场"
+  },
+  "plugins": [
+    {
+      "name": "night-observatory",
+      "category": "Teams",
+      "source": {
+        "source": "local",
+        "path": "./night-observatory"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "scene-writing",
+      "category": "Creativity",
+      "source": {
+        "source": "local",
+        "path": "./scene-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    }
+  ]
+}

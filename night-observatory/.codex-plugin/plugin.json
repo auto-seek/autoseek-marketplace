@@ -1,0 +1,17 @@
+{
+  "name": "night-observatory",
+  "version": "1.0.0",
+  "description": "Mira 把想法变成小计划，Sol 用实验和冷幽默解决问题。能认真干活，也能在部门群里闲聊。",
+  "autoseek": {
+    "templates": ["./"],
+    "apps": ["./scene"]
+  },
+  "author": {
+    "name": "AutoSeek contributors"
+  },
+  "interface": {
+    "displayName": "夜班观测站",
+    "shortDescription": "一组认真工作、也会闲聊的原创伙伴",
+    "category": "Teams"
+  }
+}

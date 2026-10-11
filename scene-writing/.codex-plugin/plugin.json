@@ -1,0 +1,14 @@
+{
+  "name": "scene-writing",
+  "version": "1.0.0",
+  "description": "Write small interactive scenes for an existing team without replacing member identities.",
+  "skills": "./skills",
+  "author": {
+    "name": "AutoSeek contributors"
+  },
+  "interface": {
+    "displayName": "场景写作",
+    "shortDescription": "为现有团队设计简短、有回应空间的互动场景",
+    "category": "Creativity"
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self' data:; connect-src 'none'"
+    />
+    <title>团队场景</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" data-copy="eyebrow"></p>
+          <h1 data-copy="title"></h1>
+        </div>
+        <label
+          ><span data-copy="group"></span
+          ><select id="department"></select
+        ></label>
+        <label
+          ><span data-copy="background"></span
+          ><select id="background">
+            <option value="dusk" data-copy="dusk"></option>
+            <option value="garden" data-copy="garden"></option>
+            <option value="studio" data-copy="studio"></option></select
+        ></label>
+        <button id="refresh" data-copy="refresh"></button>
+      </header>
+      <section class="scene-layout">
+        <section class="stage-wrap">
+          <div id="stage" data-background="dusk">
+            <p id="empty" data-copy="empty"></p>
+            <div id="cast"></div>
+          </div>
+          <div class="stage-footer">
+            <span data-copy="stageHint"></span><button id="previous" data-copy="previous"></button
+            ><span id="page"></span><button id="next" data-copy="next"></button>
+          </div>
+        </section>
+        <section class="conversation">
+          <div class="conversation-heading">
+            <h2 data-copy="conversation"></h2>
+            <button id="older" data-copy="older" hidden></button>
+          </div>
+          <div id="messages" role="log" aria-live="polite"></div>
+          <form id="composer">
+            <div class="mention-picker">
+              <label for="members" data-copy="mention"></label
+              ><select id="members"></select
+              ><button id="add-member" type="button">@</button>
+            </div>
+            <div id="mentions"></div>
+            <textarea id="message" rows="3" maxlength="1000000" data-placeholder="placeholder"></textarea>
+            <div class="quick-actions">
+              <button type="button" data-prompt="greeting" data-copy="greeting"></button
+              ><button type="button" data-prompt="opinion" data-copy="opinion"></button>
+            </div>
+            <div class="send-row">
+              <small data-copy="hint"></small><button id="send" type="submit" data-copy="send"></button>
+            </div>
+          </form>
+        </section>
+      </section>
+      <footer><span id="status" role="status"></span></footer>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
