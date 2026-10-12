@@ -1,0 +1,12 @@
+{
+  "format": "autoseek-team",
+  "version": 1,
+  "id": "project-delivery",
+  "template": "team.yaml",
+  "forkedFrom": {
+    "template": "project-delivery",
+    "source": "user",
+    "sha256": "9cc1078008c67afcde2d210d218fed54f53fee267a824b45cdb2375bcf78c438"
+  },
+  "resources": []
+}

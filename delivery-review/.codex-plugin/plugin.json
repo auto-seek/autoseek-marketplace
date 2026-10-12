@@ -1,0 +1,14 @@
+{
+  "name": "delivery-review",
+  "version": "1.0.0",
+  "description": "对照用户目标检查真实产物、验证证据和剩余问题。",
+  "skills": "./skills",
+  "author": {
+    "name": "AutoSeek contributors"
+  },
+  "interface": {
+    "displayName": "交付检查",
+    "shortDescription": "用实际产物和证据核对完成情况",
+    "category": "Productivity"
+  }
+}

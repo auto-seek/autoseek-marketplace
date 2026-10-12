@@ -1,0 +1,16 @@
+{
+  "name": "project-delivery",
+  "version": "1.0.0",
+  "description": "把真实需求变成可验证的交付。项目负责人协调目标，产品分析师澄清需求，工程师实现，质量审查员核对结果。",
+  "autoseek": {
+    "templates": ["./"]
+  },
+  "author": {
+    "name": "AutoSeek contributors"
+  },
+  "interface": {
+    "displayName": "项目交付团队",
+    "shortDescription": "从需求分析、实现到质量审查的职业协作团队",
+    "category": "Productivity"
+  }
+}

@@ -1,7 +1,0 @@
-app:
-  id: team-scene
-  name: 团队场景
-  entry: ./ui/
-  protocol: 1
-  capabilities:
-    - workspace.team-chat

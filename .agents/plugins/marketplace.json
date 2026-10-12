@@ -1,15 +1,15 @@
 {
   "name": "autoseek-community",
   "interface": {
-    "displayName": "AutoSeek 原创市场"
+    "displayName": "AutoSeek 官方市场"
   },
   "plugins": [
     {
-      "name": "night-observatory",
-      "category": "Teams",
+      "name": "project-delivery",
+      "category": "Productivity",
       "source": {
         "source": "local",
-        "path": "./night-observatory"
+        "path": "./project-delivery"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -17,11 +17,11 @@
       }
     },
     {
-      "name": "scene-writing",
-      "category": "Creativity",
+      "name": "delivery-review",
+      "category": "Productivity",
       "source": {
         "source": "local",
-        "path": "./scene-writing"
+        "path": "./delivery-review"
       },
       "policy": {
         "installation": "AVAILABLE",
