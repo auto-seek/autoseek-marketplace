@@ -1,0 +1,17 @@
+{
+  "name": "code-team",
+  "version": "1.0.1",
+  "description": "面向日常软件工程与复杂问题攻坚的研发团队，由技术负责人统筹架构、编码实现、代码审查与自动化验证。",
+  "license": "MIT",
+  "autoseek": {
+    "templates": ["./"]
+  },
+  "interface": {
+    "displayName": "编程助手团队 · 极速研发",
+    "shortDescription": "技术负责人统筹实现、测试、代码审查与疑难攻关的软件工程团队。",
+    "category": "Teams",
+    "developerName": "AutoSeek",
+    "brandColor": "#059669",
+    "capabilities": ["研发负责人与专家协作", "实现与测试闭环", "代码审查"]
+  }
+}

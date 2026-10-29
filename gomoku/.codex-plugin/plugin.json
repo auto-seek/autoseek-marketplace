@@ -1,0 +1,20 @@
+{
+  "name": "gomoku",
+  "version": "2.0.0",
+  "description": "和 Agent 下五子棋：/gomoku 在对话区打开棋盘，点棋盘落子，Agent 用插件的工具应手。",
+  "author": {
+    "name": "AutoSeek"
+  },
+  "license": "MIT",
+  "keywords": ["game", "gomoku", "mod"],
+  "interface": {
+    "displayName": "五子棋",
+    "shortDescription": "在对话区和 Agent 下五子棋",
+    "longDescription": "/gomoku 在对话区打开 15×15 棋盘。你执黑点棋盘落子，Agent 执白，用插件的落子工具应手；分出胜负后结果记在对话里。",
+    "developerName": "AutoSeek",
+    "category": "Apps",
+    "capabilities": ["在对话区显示棋盘", "提供 Agent 落子工具"],
+    "defaultPrompt": ["/gomoku"],
+    "brandColor": "#B07A3C"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ai-company",
+  "version": "1.0.1",
+  "description": "面向一人公司与全栈创业团队的协作模板，覆盖用户调研、商业验证、产品决策、全栈研发、内容增长与 GEO 分发。",
+  "license": "MIT",
+  "skills": "./skills",
+  "autoseek": {
+    "templates": ["./"]
+  },
+  "interface": {
+    "displayName": "AI Company OS · 全栈一人公司",
+    "shortDescription": "覆盖市场调研、产品决策、全栈工程、内容营销与 GEO 增长的一人公司团队。",
+    "category": "Teams",
+    "developerName": "AutoSeek",
+    "brandColor": "#2563EB",
+    "capabilities": ["一人公司团队", "产品与全栈研发", "GEO 增长营销技能"]
+  }
+}
