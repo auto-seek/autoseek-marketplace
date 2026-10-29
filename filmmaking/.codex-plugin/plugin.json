@@ -1,0 +1,18 @@
+{
+  "name": "filmmaking",
+  "version": "1.0.0",
+  "description": "专业影视协作团队与全流程创作技能包，涵盖剧本开发、角色场景美术、分镜规划、音视频制作与审片成片。",
+  "license": "MIT",
+  "skills": "./skills",
+  "autoseek": {
+    "templates": ["./"]
+  },
+  "interface": {
+    "displayName": "影视制作团队",
+    "shortDescription": "制片人、编剧、导演、概念美术、摄影与声音设计协同的影视创作团队与技能包。",
+    "category": "Teams",
+    "developerName": "AutoSeek",
+    "brandColor": "#E11D48",
+    "capabilities": ["影视制作团队", "剧本与分镜技能", "全流程视听协作"]
+  }
+}

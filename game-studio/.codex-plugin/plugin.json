@@ -1,0 +1,18 @@
+{
+  "name": "game-studio",
+  "version": "1.0.1",
+  "description": "从玩法原型到可玩版本的游戏研发团队，制作人统筹策划、程序、技术美术、音效与 QA，支持 Godot、Unity 与 Unreal Engine。",
+  "license": "MIT",
+  "skills": "./skills",
+  "autoseek": {
+    "templates": ["./"]
+  },
+  "interface": {
+    "displayName": "游戏工作室 · 策划程序美术协作",
+    "shortDescription": "制作人统筹策划、引擎工程、美术、音频与测试，打造可玩游戏版本。",
+    "category": "Teams",
+    "developerName": "AutoSeek",
+    "brandColor": "#7C3AED",
+    "capabilities": ["五角色游戏团队", "Godot/Unity/Unreal 协作", "游戏研发技能"]
+  }
+}

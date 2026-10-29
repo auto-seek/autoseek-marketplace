@@ -1,0 +1,139 @@
+<!doctype html>
+<meta charset="utf-8" />
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font:
+      14px system-ui,
+      sans-serif;
+    color: CanvasText;
+    background: transparent;
+  }
+  #board {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    padding: 12px;
+    border-radius: 12px;
+    background: #d9b77e;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.25);
+  }
+  .cell {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  .cell::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 1px solid #5a4630;
+  }
+  .cell::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid #5a4630;
+  }
+  .stone {
+    position: absolute;
+    inset: 3px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .black {
+    background: radial-gradient(circle at 35% 35%, #555, #111);
+  }
+  .white {
+    background: radial-gradient(circle at 35% 35%, #fff, #d6d0c4);
+  }
+  .last::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: #c0392b;
+  }
+  button.again {
+    font: inherit;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+</style>
+<div id="status">…</div>
+<div id="board"></div>
+<button class="again" id="again">新开一局</button>
+<script>
+  const LETTERS = "ABCDEFGHIJKLMNO";
+  const pending = new Map();
+  let next = 0;
+  let game = null;
+  const call = (method, params) =>
+    new Promise((resolve, reject) => {
+      const id = ++next;
+      pending.set(id, { resolve, reject });
+      parent.postMessage({ jsonrpc: "2.0", id, method, params }, "*");
+    });
+  function render() {
+    if (!game) return;
+    document.getElementById("status").textContent = game.status;
+    const board = document.getElementById("board");
+    const last = game.moves[game.moves.length - 1];
+    board.replaceChildren(
+      ...game.board.map((stone, index) => {
+        const point = LETTERS[index % 15] + (15 - Math.floor(index / 15));
+        const cell = document.createElement("button");
+        cell.className = "cell";
+        cell.dataset.point = point;
+        if (stone) {
+          const piece = document.createElement("span");
+          piece.className = `stone ${stone}${point === last ? " last" : ""}`;
+          cell.append(piece);
+        }
+        cell.addEventListener("click", () =>
+          call("tools/call", { name: "play", arguments: { point } }).catch(() => {}),
+        );
+        return cell;
+      }),
+    );
+  }
+  addEventListener("message", (event) => {
+    const message = event.data;
+    if (message && pending.has(message.id)) {
+      const { resolve, reject } = pending.get(message.id);
+      pending.delete(message.id);
+      message.error ? reject(new Error(message.error.message)) : resolve(message.result);
+    } else if (message && message.method === "ui/notifications/tool-result" && message.params?.structuredContent) {
+      game = message.params.structuredContent;
+      render();
+    }
+  });
+  document
+    .getElementById("again")
+    .addEventListener("click", () => call("tools/call", { name: "again", arguments: {} }));
+  call("ui/initialize", {}).then((result) => {
+    game = result.structuredContent;
+    render();
+  });
+</script>

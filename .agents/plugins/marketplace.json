@@ -6,10 +6,58 @@
   "plugins": [
     {
       "name": "project-delivery",
-      "category": "Productivity",
+      "category": "Teams",
       "source": {
         "source": "local",
         "path": "./project-delivery"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "ai-company",
+      "category": "Teams",
+      "source": {
+        "source": "local",
+        "path": "./ai-company"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "filmmaking",
+      "category": "Teams",
+      "source": {
+        "source": "local",
+        "path": "./filmmaking"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "game-studio",
+      "category": "Teams",
+      "source": {
+        "source": "local",
+        "path": "./game-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "code-team",
+      "category": "Teams",
+      "source": {
+        "source": "local",
+        "path": "./code-team"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -22,6 +70,18 @@
       "source": {
         "source": "local",
         "path": "./delivery-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    },
+    {
+      "name": "gomoku",
+      "category": "Apps",
+      "source": {
+        "source": "local",
+        "path": "./gomoku"
       },
       "policy": {
         "installation": "AVAILABLE",
