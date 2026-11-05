@@ -1,6 +1,6 @@
 {
   "name": "game-studio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "从玩法原型到可玩版本的游戏研发团队，制作人统筹策划、程序、技术美术、音效与 QA，支持 Godot、Unity 与 Unreal Engine。",
   "license": "MIT",
   "skills": "./skills",
