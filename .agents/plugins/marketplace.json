@@ -17,54 +17,6 @@
       }
     },
     {
-      "name": "ai-company",
-      "category": "Teams",
-      "source": {
-        "source": "local",
-        "path": "./ai-company"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      }
-    },
-    {
-      "name": "filmmaking",
-      "category": "Teams",
-      "source": {
-        "source": "local",
-        "path": "./filmmaking"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      }
-    },
-    {
-      "name": "game-studio",
-      "category": "Teams",
-      "source": {
-        "source": "local",
-        "path": "./game-studio"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      }
-    },
-    {
-      "name": "code-team",
-      "category": "Teams",
-      "source": {
-        "source": "local",
-        "path": "./code-team"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      }
-    },
-    {
       "name": "delivery-review",
       "category": "Productivity",
       "source": {
@@ -78,7 +30,7 @@
     },
     {
       "name": "gomoku",
-      "category": "Apps",
+      "category": "Mods",
       "source": {
         "source": "local",
         "path": "./gomoku"
