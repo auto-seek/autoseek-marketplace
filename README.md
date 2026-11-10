@@ -7,6 +7,7 @@
 | [项目交付团队](project-delivery/README.md) (`project-delivery`) | 团队        | 项目负责人、产品分析师、工程师、质量审查员一起把需求变为可验证的交付  |
 | `delivery-review`                                               | 插件 / 技能 | 对照用户目标检查实际产物、验证证据和剩余问题；可单独安装              |
 | `gomoku`                                                        | Mod         | 和 Agent 下五子棋：`/gomoku` 在对话区打开棋盘，Agent 用插件的工具应手 |
+| [Video Shotcraft](video-shotcraft/README.md) (`video-shotcraft`) | 插件 / 技能 | 用真实页面、镜头配方与 Remotion 制作产品宣传片，支持音效设计和剪映导出 |
 
 ## 安装使用
 
@@ -36,4 +37,4 @@
 
 fork 的个人模板独立保存。目录更新、包停用或卸载不会覆盖个人副本。旧版夜班观测站与场景写作示例已从当前市场目录撤下；已有团队、聊天与 fork 可继续保留，此变更不会迁移或删除它们。
 
-原创模板、技能和说明按 [MIT 许可](LICENSE) 提供。贡献者应确认有权分发所提交内容。
+原创模板、技能和说明按 [MIT 许可](LICENSE) 提供。Video Shotcraft 的代码与文档保留 [Apache-2.0 许可](video-shotcraft/LICENSE)，音频等素材按各自许可分发，详见[包说明](video-shotcraft/README.md#许可)。贡献者应确认有权分发所提交内容。

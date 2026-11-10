@@ -1,0 +1,41 @@
+{
+  "name": "video-shotcraft",
+  "version": "1.0.0",
+  "description": "用真实页面、Remotion 镜头配方和 Ink Press 模板制作产品宣传片，支持节拍同步、音效设计与剪映草稿导出。",
+  "author": {
+    "name": "Wei Yihao",
+    "url": "https://github.com/Vincentwei1021"
+  },
+  "homepage": "https://vincentwei1021.github.io/video-shotcraft/",
+  "repository": "https://github.com/auto-seek/video-shotcraft",
+  "license": "Apache-2.0",
+  "keywords": [
+    "video",
+    "remotion",
+    "motion-design",
+    "product-video",
+    "agent-skill"
+  ],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Video Shotcraft",
+    "shortDescription": "用真实页面制作可编辑的产品宣传片",
+    "longDescription": "包含 124 张镜头配方卡、150 个镜头、Ink Press 模板和 Motion Workbench。支持整片制作、单镜头动效、音效选材与对齐、节拍同步，以及剪映草稿导出。使用前需安装 Node.js/npm、ffmpeg/ffprobe；节拍分析需要 uv。第三方音乐与 Remotion 按各自许可证使用。",
+    "developerName": "Wei Yihao · AutoSeek 市场适配",
+    "category": "Creativity",
+    "capabilities": [
+      "产品宣传片",
+      "镜头动效",
+      "音效设计",
+      "剪映草稿导出"
+    ],
+    "defaultPrompt": [
+      "用 Video Shotcraft 为我的产品制作一支宣传片。",
+      "用 Ink Press 模板为这个网页制作宣传片。",
+      "用 Video Shotcraft 给这个镜头添加并对齐音效。"
+    ],
+    "brandColor": "#D3923C",
+    "composerIcon": "./assets/avatar.png",
+    "logo": "./assets/avatar.png"
+  }
+}
